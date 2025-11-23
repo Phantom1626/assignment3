@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+#greeting-header {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.input-area {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#name-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+    max-width: 250px;
+    font-size: 16px;
+}
+
+#greet-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#greet-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+.color-boxes {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* We will use the text color to show the box identity initially */
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    
+    /* Set initial background to white and add a light border for visibility */
+    background-color: white; 
+    border: 1px solid #ccc;
+    color: #333; /* Dark text color for initial contrast on white */
+}
+
+/* We don't need the specific #box-red, #box-blue, etc. styles anymore. */
+/* The initial text color can be set to the target color for clarity: */
+#box-red { color: red; }
+#box-blue { color: blue; }
+#box-green { color: green; }
+#box-yellow { color: yellow; }
